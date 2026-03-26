@@ -1,0 +1,134 @@
+/* ============================================================
+   claim.css — Claim page styles
+   ============================================================ */
+
+body{
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#0b3d70;
+    margin-bottom:20px;
+}
+
+/* SEARCH BAR */
+.search-box{
+    background:white;
+    border-radius:30px;
+    padding:12px 20px;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:14px;
+}
+
+/* ITEM SUMMARY */
+.summary{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.summary h3{
+    color:#0b3d70;
+    margin-bottom:10px;
+}
+
+/* INSTRUCTION BOX */
+.instructions{
+    text-align:center;
+    background:#e9eef3;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:25px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.instructions strong{
+    color:#0b3d70;
+}
+
+/* QUESTIONS */
+.question{
+    margin-bottom:20px;
+}
+
+.question label{
+    font-weight:bold;
+    color:#0b3d70;
+    display:block;
+    margin-bottom:5px;
+}
+
+textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    resize:none;
+    font-size:14px;
+}
+
+/* ADDITIONAL COMMENT */
+.comment-section{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.comment-label{
+    font-weight:bold;
+    color:#0b3d70;
+    display:block;
+    margin-bottom:5px;
+    font-size:14px;
+}
+
+.comment-textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    resize:none;
+    font-size:14px;
+    min-height:90px;
+    font-family:Arial, sans-serif;
+}
+
+.comment-textarea:focus{
+    outline:none;
+    border-color:#0b3d70;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn{
+    width:100%;
+    padding:14px;
+    background:#2d5fdb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}

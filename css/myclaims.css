@@ -1,0 +1,112 @@
+/* ============================================================
+   myclaims.css — My Claims page styles
+   ============================================================ */
+
+body{
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    padding:20px;
+}
+
+.page-title{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#0b3d70;
+    margin-top:10px;
+}
+
+.profile-top{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:15px;
+}
+
+.profile-main-pic{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.profile-top h2{
+    color:#0b3d70;
+    margin-bottom:5px;
+}
+
+.email{
+    font-size:14px;
+    color:#555;
+}
+
+.button-row{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:20px 0;
+}
+
+.button-row a{
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.primary-btn{
+    background:#0b3d70;
+    color:white;
+}
+
+.gray-btn{
+    background:#777;
+    color:white;
+}
+
+.stats{
+    margin-bottom:20px;
+    font-size:14px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align:center;
+    font-weight:bold;
+    color:#0b3d70;
+    margin-bottom:20px;
+}
+
+.claim-card{
+    background:white;
+    border:2px solid #0b3d70;
+    border-radius:15px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.claim-card p{
+    margin-bottom:6px;
+}
+
+.highlight{
+    color:#0b3d70;
+    font-weight:bold;
+}
+
+h1{
+    text-align:center;
+    color:#0b3d70;
+    margin-bottom:15px;
+}

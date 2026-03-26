@@ -1,0 +1,125 @@
+/* ============================================================
+   index.css — Login page styles
+   ============================================================ */
+
+body {
+    background: url("../image/bg.png") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    margin: 80px auto 40px;
+}
+
+/* Inputs */
+.login-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+}
+
+/* Password */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.password-wrapper input {
+    padding-right: 4px;
+}
+
+/* Forgot */
+.forgot {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #1f4f82;
+    text-decoration: none;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #2d5f94;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Social */
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background: white;
+    color: black;
+}
+
+/* Divider */
+.signup {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #1f4f82;
+}
+
+.signup p {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #1f4f82;
+}
+
+/* Create */
+.create {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.create a {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}

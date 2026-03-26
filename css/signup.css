@@ -1,0 +1,193 @@
+/* ============================================================
+   signup.css — Sign-up page styles
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../image/bg.png") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    width: 400px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, rgba(11,61,112,0.93), rgba(45,95,219,0.93));
+    padding: 28px 24px 24px;
+    border-radius: 22px;
+    color: white;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.card > p {
+    font-size: 13px;
+    margin: 0 0 20px;
+    opacity: 0.85;
+}
+
+.card > p a {
+    color: #afd0ff;
+    text-decoration: underline;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 8px;
+    border: 1.5px solid transparent;
+    background: white;
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 12px;
+    display: block;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #afd0ff;
+}
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.name-row input {
+    flex: 1;
+    min-width: 0;        
+    margin-bottom: 12px;
+}
+
+/* PASSWORD */
+.password-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.password-wrapper input {
+    padding-right: 42px;
+    margin-bottom: 0;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+}
+
+/*  TERMS  */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 4px 0 18px;
+    gap: 8px;
+    line-height: 1.4;
+}
+
+.terms input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.terms a {
+    color: #afd0ff;
+    text-decoration: underline;
+}
+
+/* SIGN UP BUTTON */
+.signup-btn {
+    width: 100%;
+    padding: 13px;
+    background: #1a3f6f;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #122d52;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 22px 0 16px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+/* SOCIAL BUTTONS */
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 11px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    background: white;
+    color: #222;
+}
+
+.social-btn:hover {
+    background: #f0f0f0;
+}

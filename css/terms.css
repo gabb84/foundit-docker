@@ -1,0 +1,178 @@
+/* ============================================================
+   terms.css — Terms & Conditions page styles
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../image/bg.png") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 16px 50px;
+}
+
+/* ── PAGE WRAPPER ────────────────────────────────────────── */
+.page-wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* ── HEADER ──────────────────────────────────────────────── */
+.terms-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 180px;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.terms-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0b3d70;
+    margin: 0 0 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ── CARD ────────────────────────────────────────────────── */
+.terms-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.last-updated {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* ── ACCORDION SECTIONS ──────────────────────────────────── */
+.section {
+    border: 1px solid #e0e8f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.section.open {
+    box-shadow: 0 4px 14px rgba(11,61,112,0.1);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: #f4f8fc;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0b3d70;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.section-header:hover {
+    background: #e6f0fa;
+}
+
+.section.open .section-header {
+    background: #0b3d70;
+    color: white;
+}
+
+.chevron {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.section.open .chevron {
+    transform: rotate(180deg);
+}
+
+/* ── SECTION BODY ────────────────────────────────────────── */
+.section-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.25s ease;
+    padding: 0 18px;
+}
+
+.section.open .section-body {
+    max-height: 600px;
+    padding: 16px 18px;
+}
+
+.section-body p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.section-body p:last-child {
+    margin-bottom: 0;
+}
+
+.section-body ul {
+    padding-left: 20px;
+    margin: 8px 0 10px;
+}
+
+.section-body ul li {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.section-body a {
+    color: #2d5fdb;
+    text-decoration: underline;
+}
+
+.section-body strong {
+    color: #0b3d70;
+}
+
+/* ── BACK BUTTON ─────────────────────────────────────────── */
+.back-row {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0b3d70;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #09305a;
+}
